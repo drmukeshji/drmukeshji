@@ -38,7 +38,14 @@ const courseData: Record<string, { course: string; program: string; sem: string 
     { course: 'Machine Learning', program: 'Ph.D Course Work', sem: '' },
     { course: 'Project', program: 'CSE-IOT', sem: '' },
   ],
-  'JULY 2025': [],
+  'JULY 2025': [
+    { course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester' },
+    { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester' },
+    { course: 'Computer System Architecture', program: 'MCA', sem: '3rd Semester' },
+    { course: 'Practical Training-II', program: 'AI', sem: '7th Semester' },
+    { course: 'Practical Training-II', program: 'CS', sem: '7th Semester' },
+    { course: 'Practical Training-I', program: 'IOT', sem: '5th Semester' },
+  ],
   'JAN 2026': [],
 };
 
