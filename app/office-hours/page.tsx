@@ -1,7 +1,9 @@
 const schedule = [
-  { day: 'Monday', time: '— TBD' },
-  { day: 'Wednesday', time: '— TBD' },
-  { day: 'Friday', time: '— TBD' },
+  { day: 'Monday', time: '10:00 AM – 4:00 PM' },
+  { day: 'Tuesday', time: '10:00 AM – 4:00 PM' },
+  { day: 'Wednesday', time: '10:00 AM – 4:00 PM' },
+  { day: 'Thursday', time: '10:00 AM – 4:00 PM' },
+  { day: 'Friday', time: '10:00 AM – 4:00 PM' },
 ];
 
 // Replace FORM_URL below with your actual Google Form embed URL
@@ -24,7 +26,7 @@ export default function OfficeHours() {
         {/* Sidebar */}
         <aside className="lg:col-span-1 space-y-8">
           {/* Schedule */}
-          <div className="border border-stone-200 p-6 rounded-sm bg-[#FDFAF6]">
+          <div className="border border-stone-200 p-6 rounded-2xl bg-[#FDFAF6]">
             <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">Schedule</p>
             <ul className="space-y-4">
               {schedule.map((s) => (
@@ -37,7 +39,7 @@ export default function OfficeHours() {
           </div>
 
           {/* Contact */}
-          <div className="border border-stone-200 p-6 rounded-sm bg-[#FDFAF6]">
+          <div className="border border-stone-200 p-6 rounded-2xl bg-[#FDFAF6]">
             <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">Contact</p>
             <ul className="space-y-4">
               <li>
@@ -58,30 +60,43 @@ export default function OfficeHours() {
 
         {/* Google Form Embed */}
         <div className="lg:col-span-2">
-          <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">Schedule a Meeting</p>
-
           {GOOGLE_FORM_URL ? (
-            <iframe
-              src={GOOGLE_FORM_URL}
-              width="100%"
-              height="700"
-              frameBorder="0"
-              marginHeight={0}
-              marginWidth={0}
-              className="border border-gray-200 rounded-sm"
-              title="Office Hours Appointment Form"
-            >
-              Loading form…
-            </iframe>
+            <div className="rounded-2xl overflow-hidden border border-stone-200">
+              <div className="bg-[#F2EDE6] px-6 py-4 border-b border-stone-200">
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-navy-600">Book an Appointment</p>
+              </div>
+              <iframe
+                src={GOOGLE_FORM_URL}
+                width="100%"
+                height="700"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+                className="bg-white"
+                title="Office Hours Appointment Form"
+              >
+                Loading form...
+              </iframe>
+            </div>
           ) : (
-            <div className="border border-dashed border-gray-300 rounded-sm flex flex-col items-center justify-center min-h-[400px] text-center p-12">
-              <p className="font-playfair text-xl text-gray-400 mb-3">Form Coming Soon</p>
-              <p className="font-inter text-sm text-gray-400 max-w-sm leading-relaxed">
-                The appointment form will be embedded here. In the meantime, please reach out via email to schedule a meeting.
-              </p>
-              <p className="font-inter text-xs text-gray-300 mt-6">
-                Developer note: replace <code className="bg-gray-100 px-1 py-0.5 rounded text-gray-500">GOOGLE_FORM_URL</code> in this page with your Google Form embed URL.
-              </p>
+            <div className="rounded-2xl border border-stone-200 overflow-hidden">
+              <div className="bg-[#F2EDE6] px-6 py-4 border-b border-stone-200">
+                <p className="font-inter text-xs tracking-[0.2em] uppercase text-navy-600">Book an Appointment</p>
+              </div>
+              <div className="bg-[#FDFAF6] flex flex-col items-center justify-center min-h-[360px] text-center p-12">
+                <div className="w-12 h-12 rounded-full bg-navy-50 border border-navy-100 flex items-center justify-center mb-5">
+                  <svg className="w-5 h-5 text-navy-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="font-playfair text-xl text-gray-700 mb-2">Appointment Form</p>
+                <p className="font-inter text-sm text-gray-400 max-w-xs leading-relaxed">
+                  The scheduling form will appear here once the Google Form link is configured.
+                </p>
+                <p className="font-inter text-xs text-gray-300 mt-5 bg-white border border-stone-200 rounded-lg px-3 py-2">
+                  Add your form URL to <code className="text-navy-500">GOOGLE_FORM_URL</code> in this page
+                </p>
+              </div>
             </div>
           )}
         </div>
