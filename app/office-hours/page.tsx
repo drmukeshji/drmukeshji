@@ -44,7 +44,12 @@ export default function OfficeHours() {
             <ul className="space-y-4">
               <li>
                 <p className="font-inter text-xs text-gray-400 uppercase tracking-widest mb-1">Email</p>
-                <p className="font-inter text-sm text-gray-700">Add your email address</p>
+                <a
+                  href="mailto:drmukesh@gurugramuniversity.ac.in"
+                  className="font-inter text-sm text-navy-700 hover:underline underline-offset-2"
+                >
+                  drmukesh@gurugramuniversity.ac.in
+                </a>
               </li>
               <li>
                 <p className="font-inter text-xs text-gray-400 uppercase tracking-widest mb-1">Office</p>
