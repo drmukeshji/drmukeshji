@@ -15,6 +15,7 @@ const labManuals = [
   { num: '01', title: 'Lab Manual — Analysis and Design of Algorithms', href: '/ebooks/lab-manual-ada.pdf' },
   { num: '02', title: 'Lab Manual — Algorithm Design', href: '/ebooks/lab-manual-algorithm-design.pdf' },
   { num: '03', title: 'Manual — Knowledge Based System', href: '/ebooks/lab-manual-kbs.pdf' },
+  { num: '04', title: 'E-Content Development in 4 Quadrants for a Complete Course', href: '/ebooks/econtent-4-quadrants.pdf' },
 ];
 
 function EbookCard({ num, title, href }: { num: string; title: string; href: string }) {

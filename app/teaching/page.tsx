@@ -46,7 +46,13 @@ const courseData: Record<string, { course: string; program: string; sem: string 
     { course: 'Practical Training-II', program: 'CS', sem: '7th Semester' },
     { course: 'Practical Training-I', program: 'IOT', sem: '5th Semester' },
   ],
-  'JAN 2026': [],
+  'JAN 2026': [
+    { course: 'Algorithms Design', program: 'M.Tech. CSE', sem: '2nd Semester' },
+    { course: 'Algorithms Design Lab', program: 'M.Tech. CSE', sem: '2nd Semester' },
+    { course: 'Machine Learning', program: 'Ph.D Course Work', sem: '' },
+    { course: 'Intrusion Detection System', program: 'B.Tech CS', sem: '6th Semester' },
+    { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
+  ],
 };
 
 const resourceCols = ['Syllabus', 'PPT', 'Ebooks', 'Notes', 'Old Question Papers'];
