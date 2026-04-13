@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const sections = [
   { num: '01', label: 'Bio', href: '/bio', desc: 'Academic background, career, and achievements' },
@@ -22,15 +23,31 @@ export default function Home() {
     <div className="max-w-6xl mx-auto px-6 lg:px-8 min-h-screen">
       {/* Hero */}
       <section className="pt-20 pb-16 border-b border-gray-200">
-        <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-6">
-          Associate Professor · Gurugram University
-        </p>
-        <h1 className="font-playfair text-6xl md:text-8xl font-bold text-gray-900 leading-none tracking-tight mb-6">
-          Dr. Mukesh<br />Kumar
-        </h1>
-        <p className="font-inter text-sm tracking-[0.2em] uppercase text-navy-600 mt-4">
-          Department of Engineering &amp; Technology &nbsp;·&nbsp; 19+ Years Experience
-        </p>
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
+          <div>
+            <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-6">
+              Associate Professor · Gurugram University
+            </p>
+            <h1 className="font-playfair text-6xl md:text-8xl font-bold text-gray-900 leading-none tracking-tight mb-6">
+              Dr. Mukesh<br />Kumar
+            </h1>
+            <p className="font-inter text-sm tracking-[0.2em] uppercase text-navy-600 mt-4">
+              Department of Engineering &amp; Technology &nbsp;·&nbsp; 19+ Years Experience
+            </p>
+          </div>
+          <div className="shrink-0">
+            <div className="w-48 h-48 lg:w-56 lg:h-56 rounded-2xl overflow-hidden border border-stone-200 shadow-sm">
+              <Image
+                src="/dr-mukesh-kumar.png"
+                alt="Dr. Mukesh Kumar"
+                width={224}
+                height={224}
+                className="w-full h-full object-cover object-top"
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Nav Cards */}
