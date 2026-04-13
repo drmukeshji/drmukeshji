@@ -26,16 +26,16 @@ export default function Writing() {
       </div>
 
       {/* Stats Row */}
-      <div className="grid grid-cols-3 gap-px bg-gray-200 mb-14">
-        <div className="bg-white p-8 text-center">
+      <div className="grid grid-cols-3 gap-px bg-stone-200 mb-14">
+        <div className="bg-[#FDFAF6] p-8 text-center">
           <p className="font-playfair text-5xl font-bold text-navy-800">100+</p>
           <p className="font-inter text-xs tracking-widest uppercase text-gray-400 mt-2">Publications</p>
         </div>
-        <div className="bg-white p-8 text-center">
+        <div className="bg-[#FDFAF6] p-8 text-center">
           <p className="font-playfair text-5xl font-bold text-navy-800">19+</p>
           <p className="font-inter text-xs tracking-widest uppercase text-gray-400 mt-2">Years Research</p>
         </div>
-        <div className="bg-white p-8 text-center">
+        <div className="bg-[#FDFAF6] p-8 text-center">
           <p className="font-playfair text-5xl font-bold text-navy-800">7</p>
           <p className="font-inter text-xs tracking-widest uppercase text-gray-400 mt-2">Research Areas</p>
         </div>

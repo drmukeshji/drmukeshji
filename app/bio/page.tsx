@@ -16,7 +16,7 @@ export default function Bio() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Quick Stats Sidebar */}
         <aside className="lg:col-span-1 space-y-8">
-          <div className="border border-gray-200 p-6 rounded-sm">
+          <div className="border border-stone-200 p-6 rounded-sm bg-[#FDFAF6]">
             <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-4">At a Glance</p>
             <ul className="space-y-4">
               <li>
@@ -38,7 +38,7 @@ export default function Bio() {
             </ul>
           </div>
 
-          <div className="border border-gray-200 p-6 rounded-sm">
+          <div className="border border-stone-200 p-6 rounded-sm bg-[#FDFAF6]">
             <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-4">Expertise</p>
             <div className="flex flex-wrap gap-2">
               {['AI', 'Machine Learning', 'Cloud Computing', 'Data Science', 'Networking', 'Software Engineering'].map((tag) => (

@@ -19,7 +19,7 @@ const interests = [
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto px-6 lg:px-8">
+    <div className="max-w-6xl mx-auto px-6 lg:px-8 min-h-screen">
       {/* Hero */}
       <section className="pt-20 pb-16 border-b border-gray-200">
         <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-6">
@@ -34,12 +34,12 @@ export default function Home() {
       </section>
 
       {/* Nav Cards */}
-      <section className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-200">
+      <section className="py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 rounded-2xl overflow-hidden">
         {sections.map((s) => (
           <Link
             key={s.href}
             href={s.href}
-            className="group bg-white p-8 flex flex-col justify-between min-h-[180px] hover:bg-gray-50 transition-colors"
+            className="group bg-warm-card rounded-xl p-8 flex flex-col justify-between min-h-[180px] hover:bg-warm transition-colors border border-stone-200 hover:border-stone-300"
           >
             <div>
               <span className="font-inter text-xs tracking-widest text-navy-600 uppercase">{s.num}</span>
@@ -58,11 +58,11 @@ export default function Home() {
         <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-6">
           Research Interests
         </p>
-        <div className="flex flex-wrap gap-2">
+        <div className="bg-warm rounded-2xl p-6 flex flex-wrap gap-3">
           {interests.map((tag) => (
             <span
               key={tag}
-              className="font-inter text-xs tracking-widest uppercase border border-navy-100 text-navy-700 px-4 py-2 rounded-sm"
+              className="font-inter text-xs tracking-widest uppercase bg-white border border-navy-200 text-navy-700 px-5 py-2.5 rounded-full shadow-sm hover:bg-navy-50 hover:border-navy-400 transition-colors cursor-default"
             >
               {tag}
             </span>

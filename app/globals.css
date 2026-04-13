@@ -21,6 +21,14 @@ body {
   font-family: var(--font-inter), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F8F5F0;
+}
+
+.bg-warm {
+  background-color: #F2EDE6;
+}
+.bg-warm-card {
+  background-color: #FDFAF6;
 }
 
 h1, h2, h3 {

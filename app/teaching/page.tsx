@@ -55,7 +55,7 @@ export default function Teaching() {
       </div>
 
       {/* Semester Tabs */}
-      <div className="flex flex-wrap gap-0 border border-gray-200 rounded-sm overflow-hidden mb-10 w-fit">
+      <div className="flex flex-wrap gap-0 border border-stone-200 rounded-sm overflow-hidden mb-10 w-fit">
         {semesters.map((sem, idx) => (
           <button
             key={sem}
@@ -81,7 +81,7 @@ export default function Teaching() {
       <div className="overflow-x-auto border border-gray-200 rounded-sm">
         <table className="w-full min-w-[700px]">
           <thead>
-            <tr className="bg-gray-50 border-b border-gray-200">
+            <tr className="bg-[#F2EDE6] border-b border-gray-200">
               <th className="font-inter text-xs tracking-widest uppercase text-gray-400 text-left px-5 py-4 w-8">#</th>
               <th className="font-inter text-xs tracking-widest uppercase text-gray-400 text-left px-5 py-4">Course Name</th>
               <th className="font-inter text-xs tracking-widest uppercase text-gray-400 text-left px-5 py-4">Semester</th>
