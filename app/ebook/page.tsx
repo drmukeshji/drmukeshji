@@ -28,7 +28,7 @@ function EbookCard({ num, title }: { num: string; title: string }) {
       </div>
       <a
         href="#"
-        className="font-inter text-xs tracking-widest uppercase border border-gray-300 text-gray-500 px-4 py-2 rounded-sm whitespace-nowrap hover:border-gray-900 hover:text-gray-900 transition-colors shrink-0"
+        className="font-inter text-xs tracking-widest uppercase border border-gray-300 text-gray-500 px-4 py-2 rounded-sm whitespace-nowrap hover:border-navy-700 hover:text-navy-700 transition-colors shrink-0"
       >
         PDF ↓
       </a>
@@ -41,7 +41,7 @@ export default function Ebook() {
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
       {/* Header */}
       <div className="border-b border-gray-200 pb-10 mb-12">
-        <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-3">Publications</p>
+        <p className="font-inter text-xs tracking-[0.25em] uppercase text-navy-600 mb-3">Publications</p>
         <h1 className="font-playfair text-5xl md:text-6xl font-bold text-gray-900 leading-tight">Ebooks</h1>
         <p className="font-inter text-base text-gray-500 mt-4 max-w-xl leading-relaxed">
           A collection of authored and co-authored digital textbooks, lab manuals, and reference books for engineering students.
@@ -80,7 +80,7 @@ export default function Ebook() {
               </div>
               <a
                 href="#"
-                className="font-inter text-xs tracking-widest uppercase border border-gray-300 text-gray-500 px-4 py-2 rounded-sm whitespace-nowrap hover:border-gray-900 hover:text-gray-900 transition-colors shrink-0"
+                className="font-inter text-xs tracking-widest uppercase border border-gray-300 text-gray-500 px-4 py-2 rounded-sm whitespace-nowrap hover:border-navy-700 hover:text-navy-700 transition-colors shrink-0"
               >
                 PDF ↓
               </a>

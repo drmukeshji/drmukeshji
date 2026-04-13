@@ -33,7 +33,7 @@ export default function Navbar() {
                 href={item.href}
                 className={`font-inter text-sm font-medium tracking-wide transition-colors ${
                   pathname === item.href
-                    ? 'text-blue-700 border-b-2 border-blue-700 pb-0.5'
+                    ? 'text-navy-700 border-b-2 border-navy-700 pb-0.5'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >
@@ -67,7 +67,7 @@ export default function Navbar() {
                 href={item.href}
                 className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors ${
                   pathname === item.href
-                    ? 'text-blue-700 bg-blue-50'
+                    ? 'text-navy-700 bg-navy-50'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                 }`}
                 onClick={() => setIsOpen(false)}

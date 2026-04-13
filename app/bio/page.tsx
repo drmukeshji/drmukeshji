@@ -3,7 +3,7 @@ export default function Bio() {
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
       {/* Page Header */}
       <div className="border-b border-gray-200 pb-10 mb-12">
-        <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-3">About</p>
+        <p className="font-inter text-xs tracking-[0.25em] uppercase text-navy-600 mb-3">About</p>
         <h1 className="font-playfair text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
           Dr. Mukesh Kumar
         </h1>
@@ -21,11 +21,11 @@ export default function Bio() {
             <ul className="space-y-4">
               <li>
                 <p className="font-inter text-xs text-gray-400 uppercase tracking-widest">Experience</p>
-                <p className="font-playfair text-xl font-semibold text-gray-900 mt-1">19+ Years</p>
+                <p className="font-playfair text-xl font-semibold text-navy-800 mt-1">19+ Years</p>
               </li>
               <li>
                 <p className="font-inter text-xs text-gray-400 uppercase tracking-widest">Publications</p>
-                <p className="font-playfair text-xl font-semibold text-gray-900 mt-1">100+</p>
+                <p className="font-playfair text-xl font-semibold text-navy-800 mt-1">100+</p>
               </li>
               <li>
                 <p className="font-inter text-xs text-gray-400 uppercase tracking-widest">Qualification</p>
@@ -60,7 +60,7 @@ export default function Bio() {
             Dr. Kumar possesses a strong academic foundation with qualifications including B.Tech, M.Tech, and Ph.D. in the field of engineering and technology, with a specialization in Computer Engineering and allied domains. His areas of expertise encompass emerging and in-demand fields such as Artificial Intelligence, Machine Learning, Cloud Computing, Data Science, Networking and Software Engineering. He has consistently focused on bridging the gap between theoretical knowledge and practical application, thereby preparing students to meet industry expectations and technological advancements.
           </p>
 
-          <div className="border-l-2 border-gray-900 pl-6">
+          <div className="border-l-2 border-navy-700 pl-6">
             <p className="font-playfair text-xl italic text-gray-800 leading-relaxed">
               &quot;Bridging the gap between theoretical knowledge and practical application, preparing students to meet industry expectations and technological advancements.&quot;
             </p>

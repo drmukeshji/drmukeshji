@@ -47,7 +47,7 @@ export default function Teaching() {
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
       {/* Header */}
       <div className="border-b border-gray-200 pb-10 mb-12">
-        <p className="font-inter text-xs tracking-[0.25em] uppercase text-gray-400 mb-3">Academics</p>
+        <p className="font-inter text-xs tracking-[0.25em] uppercase text-navy-600 mb-3">Academics</p>
         <h1 className="font-playfair text-5xl md:text-6xl font-bold text-gray-900 leading-tight">Teaching</h1>
         <p className="font-inter text-base text-gray-500 mt-4 max-w-xl leading-relaxed">
           Course materials organized by semester — including syllabi, lecture PPTs, ebooks, notes, and previous year question papers.
@@ -62,7 +62,7 @@ export default function Teaching() {
             onClick={() => setActive(sem)}
             className={`font-inter text-xs tracking-widest uppercase px-5 py-3 transition-colors border-r border-gray-200 last:border-r-0 ${
               active === sem
-                ? 'bg-gray-900 text-white'
+                ? 'bg-navy-800 text-white'
                 : 'bg-white text-gray-500 hover:bg-gray-50 hover:text-gray-900'
             }`}
           >

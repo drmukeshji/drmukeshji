@@ -28,7 +28,7 @@ export default function Home() {
         <h1 className="font-playfair text-6xl md:text-8xl font-bold text-gray-900 leading-none tracking-tight mb-6">
           Dr. Mukesh<br />Kumar
         </h1>
-        <p className="font-inter text-sm tracking-[0.2em] uppercase text-gray-400 mt-4">
+        <p className="font-inter text-sm tracking-[0.2em] uppercase text-navy-600 mt-4">
           Department of Engineering &amp; Technology &nbsp;·&nbsp; 19+ Years Experience
         </p>
       </section>
@@ -42,7 +42,7 @@ export default function Home() {
             className="group bg-white p-8 flex flex-col justify-between min-h-[180px] hover:bg-gray-50 transition-colors"
           >
             <div>
-              <span className="font-inter text-xs tracking-widest text-gray-400 uppercase">{s.num}</span>
+              <span className="font-inter text-xs tracking-widest text-navy-600 uppercase">{s.num}</span>
               <h2 className="font-playfair text-2xl font-semibold text-gray-900 mt-2 mb-3">{s.label}</h2>
               <p className="font-inter text-sm text-gray-500 leading-relaxed">{s.desc}</p>
             </div>
@@ -62,7 +62,7 @@ export default function Home() {
           {interests.map((tag) => (
             <span
               key={tag}
-              className="font-inter text-xs tracking-widest uppercase border border-gray-300 text-gray-600 px-4 py-2 rounded-sm"
+              className="font-inter text-xs tracking-widest uppercase border border-navy-100 text-navy-700 px-4 py-2 rounded-sm"
             >
               {tag}
             </span>
