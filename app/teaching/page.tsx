@@ -12,45 +12,45 @@ const semesters = [
   'JAN 2026',
 ];
 
-const courseData: Record<string, { course: string; program: string; sem: string }[]> = {
+const courseData: Record<string, { course: string; program: string; sem: string; ebook?: string }[]> = {
   'JAN 2023': [],
   'JULY 2023': [
-    { course: 'Neural Network', program: 'AI', sem: '7th Semester' },
-    { course: 'Mathematical Foundation of Computer Sciences', program: 'M.Tech', sem: '1st Semester' },
+    { course: 'Neural Network', program: 'AI', sem: '7th Semester', ebook: '/ebooks/neural-network.pdf' },
+    { course: 'Mathematical Foundation of Computer Sciences', program: 'M.Tech', sem: '1st Semester', ebook: '/ebooks/mathematical-foundation-cs.pdf' },
     { course: 'Practical Training-II', program: 'AI', sem: '7th Semester' },
     { course: 'Project', program: 'AI', sem: '7th Semester' },
   ],
   'JAN 2024': [
-    { course: 'Analysis and Design of Algorithms', program: 'B.Tech.', sem: '4th Semester' },
-    { course: 'Analysis and Design of Algorithms Lab', program: 'B.Tech.', sem: '4th Semester' },
-    { course: 'Algorithms Design', program: 'M.Tech.', sem: '2nd Semester' },
-    { course: 'Algorithms Design Lab', program: 'M.Tech.', sem: '2nd Semester' },
+    { course: 'Analysis and Design of Algorithms', program: 'B.Tech.', sem: '4th Semester', ebook: '/ebooks/analysis-design-algorithms.pdf' },
+    { course: 'Analysis and Design of Algorithms Lab', program: 'B.Tech.', sem: '4th Semester', ebook: '/ebooks/lab-manual-ada.pdf' },
+    { course: 'Algorithms Design', program: 'M.Tech.', sem: '2nd Semester', ebook: '/ebooks/algorithm-design.pdf' },
+    { course: 'Algorithms Design Lab', program: 'M.Tech.', sem: '2nd Semester', ebook: '/ebooks/lab-manual-algorithm-design.pdf' },
     { course: 'Seminar', program: 'M.Tech.', sem: '2nd Semester' },
   ],
   'JULY 2024': [
-    { course: 'Mathematical Foundation of Computer Sciences', program: 'M.Tech', sem: '1st Semester' },
-    { course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester' },
-    { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester' },
-    { course: 'Cyber Security Threats', program: 'B.Tech', sem: '5th Semester' },
+    { course: 'Mathematical Foundation of Computer Sciences', program: 'M.Tech', sem: '1st Semester', ebook: '/ebooks/mathematical-foundation-cs.pdf' },
+    { course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester', ebook: '/ebooks/knowledge-based-system.pdf' },
+    { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester', ebook: '/ebooks/lab-manual-kbs.pdf' },
+    { course: 'Cyber Security Threats', program: 'B.Tech', sem: '5th Semester', ebook: '/ebooks/cyber-security-threats.pdf' },
   ],
   'JAN 2025': [
-    { course: 'Software Engineering', program: 'M.Tech.', sem: '2nd Semester' },
+    { course: 'Software Engineering', program: 'M.Tech.', sem: '2nd Semester', ebook: '/ebooks/software-engineering.pdf' },
     { course: 'Machine Learning', program: 'Ph.D Course Work', sem: '' },
     { course: 'Project', program: 'CSE-IOT', sem: '' },
   ],
   'JULY 2025': [
-    { course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester' },
-    { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester' },
-    { course: 'Computer System Architecture', program: 'MCA', sem: '3rd Semester' },
+    { course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester', ebook: '/ebooks/knowledge-based-system.pdf' },
+    { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester', ebook: '/ebooks/lab-manual-kbs.pdf' },
+    { course: 'Computer System Architecture', program: 'MCA', sem: '3rd Semester', ebook: '/ebooks/computer-system-architecture.pdf' },
     { course: 'Practical Training-II', program: 'AI', sem: '7th Semester' },
     { course: 'Practical Training-II', program: 'CS', sem: '7th Semester' },
     { course: 'Practical Training-I', program: 'IOT', sem: '5th Semester' },
   ],
   'JAN 2026': [
-    { course: 'Algorithms Design', program: 'M.Tech. CSE', sem: '2nd Semester' },
-    { course: 'Algorithms Design Lab', program: 'M.Tech. CSE', sem: '2nd Semester' },
+    { course: 'Algorithms Design', program: 'M.Tech. CSE', sem: '2nd Semester', ebook: '/ebooks/algorithm-design.pdf' },
+    { course: 'Algorithms Design Lab', program: 'M.Tech. CSE', sem: '2nd Semester', ebook: '/ebooks/lab-manual-algorithm-design.pdf' },
     { course: 'Machine Learning', program: 'Ph.D Course Work', sem: '' },
-    { course: 'Intrusion Detection System', program: 'B.Tech CS', sem: '6th Semester' },
+    { course: 'Intrusion Detection System', program: 'B.Tech CS', sem: '6th Semester', ebook: '/ebooks/intrusion-detection-system.pdf' },
     { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
   ],
 };
@@ -103,7 +103,7 @@ export default function Teaching() {
         </div>
       ) : (
         <div className="overflow-x-auto border border-gray-200 rounded-sm">
-          <table className="w-full min-w-[700px]">
+          <table className="w-full min-w-[800px]">
             <thead>
               <tr className="bg-[#F2EDE6] border-b border-gray-200">
                 <th className="font-inter text-xs tracking-widest uppercase text-gray-400 text-left px-5 py-4 w-8">#</th>
@@ -124,11 +124,38 @@ export default function Teaching() {
                   <td className="font-playfair text-base font-medium text-gray-900 px-5 py-4">{row.course}</td>
                   <td className="font-inter text-sm text-gray-500 px-5 py-4">{row.program}</td>
                   <td className="font-inter text-sm text-gray-500 px-5 py-4">{row.sem}</td>
-                  {resourceCols.map((col) => (
-                    <td key={col} className="text-center px-4 py-4">
+                  {/* Syllabus */}
+                  <td className="text-center px-4 py-4">
+                    <span className="font-inter text-xs text-gray-300">—</span>
+                  </td>
+                  {/* PPT */}
+                  <td className="text-center px-4 py-4">
+                    <span className="font-inter text-xs text-gray-300">—</span>
+                  </td>
+                  {/* Ebooks */}
+                  <td className="text-center px-4 py-4">
+                    {row.ebook ? (
+                      <a
+                        href={row.ebook}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-inter text-xs tracking-wide uppercase text-navy-700 border border-navy-200 px-3 py-1.5 rounded-sm hover:bg-navy-50 hover:border-navy-400 transition-colors whitespace-nowrap"
+                      >
+                        PDF ↓
+                      </a>
+                    ) : (
                       <span className="font-inter text-xs text-gray-300">—</span>
-                    </td>
-                  ))}
+                    )}
+                  </td>
+                  {/* Notes */}
+                  <td className="text-center px-4 py-4">
+                    <span className="font-inter text-xs text-gray-300">—</span>
+                  </td>
+                  {/* Old Question Papers */}
+                  <td className="text-center px-4 py-4">
+                    <span className="font-inter text-xs text-gray-300">—</span>
+                  </td>
                 </tr>
               ))}
             </tbody>
