@@ -8,9 +8,8 @@ const researchAreas = [
   'Software Engineering',
 ];
 
-const publications = [
+const publications: { title: string; venue: string; year: string; type: string }[] = [
   // Placeholder — real publications to be added
-  // { title: '', venue: '', year: '', type: 'journal' | 'conference' },
 ];
 
 export default function Writing() {
