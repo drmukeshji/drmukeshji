@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Bio() {
   return (
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
@@ -16,6 +18,18 @@ export default function Bio() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
         {/* Quick Stats Sidebar */}
         <aside className="lg:col-span-1 space-y-8">
+          {/* Photo */}
+          <div className="border border-stone-200 rounded-sm bg-[#FDFAF6] overflow-hidden">
+            <Image
+              src="/dr-mukesh-kumar.png"
+              alt="Dr. Mukesh Kumar"
+              width={400}
+              height={400}
+              className="w-full object-cover object-top"
+              priority
+            />
+          </div>
+
           <div className="border border-stone-200 p-6 rounded-sm bg-[#FDFAF6]">
             <p className="font-inter text-xs tracking-[0.2em] uppercase text-gray-400 mb-4">At a Glance</p>
             <ul className="space-y-4">
