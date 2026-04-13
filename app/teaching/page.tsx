@@ -33,7 +33,11 @@ const courseData: Record<string, { course: string; program: string; sem: string 
     { course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester' },
     { course: 'Cyber Security Threats', program: 'B.Tech', sem: '5th Semester' },
   ],
-  'JAN 2025': [],
+  'JAN 2025': [
+    { course: 'Software Engineering', program: 'M.Tech.', sem: '2nd Semester' },
+    { course: 'Machine Learning', program: 'Ph.D Course Work', sem: '' },
+    { course: 'Project', program: 'CSE-IOT', sem: '' },
+  ],
   'JULY 2025': [],
   'JAN 2026': [],
 };
