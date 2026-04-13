@@ -8,7 +8,7 @@ const schedule = [
 
 // Replace FORM_URL below with your actual Google Form embed URL
 // To get it: open your Google Form → Send → Embed → copy the src URL
-const GOOGLE_FORM_URL = ''; // e.g. https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfV19RMZfBsnmxHuWXuYy_z9ATSN9u0GbufVrjQ-Ct4ECH_Bw/viewform?embedded=true';
 
 export default function OfficeHours() {
   return (
