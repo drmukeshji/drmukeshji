@@ -10,6 +10,7 @@ const semesters = [
   'JAN 2025',
   'JULY 2025',
   'JAN 2026',
+  'JULY 2026',
 ];
 
 type Resources = {
@@ -122,6 +123,7 @@ const courseData: Record<string, Course[]> = {
     },
     { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
   ],
+  'JULY 2026': [],
 };
 
 function ResourceLink({ href, label }: { href: string; label: string }) {
