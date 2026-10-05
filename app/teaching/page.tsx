@@ -74,11 +74,11 @@ const courseData: Record<string, Course[]> = {
     },
     {
       course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+      resources: { syllabus: '/courses/july-2024/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
     },
     {
       course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/lab-manual-kbs.pdf' },
+      resources: { syllabus: '/courses/july-2024/knowledge-based-system-lab/syllabus/KBL.pdf', ebook: '/ebooks/lab-manual-kbs.pdf' },
     },
     {
       course: 'Cyber Security Threats', program: 'B.Tech', sem: '5th Semester',
@@ -96,11 +96,11 @@ const courseData: Record<string, Course[]> = {
   'JULY 2025': [
     {
       course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+      resources: { syllabus: '/courses/july-2025/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
     },
     {
       course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/lab-manual-kbs.pdf' },
+      resources: { syllabus: '/courses/july-2025/knowledge-based-system-lab/syllabus/KBL.pdf', ebook: '/ebooks/lab-manual-kbs.pdf' },
     },
     {
       course: 'Computer System Architecture', program: 'MCA', sem: '3rd Semester',
@@ -126,7 +126,16 @@ const courseData: Record<string, Course[]> = {
     },
     { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
   ],
-  'JULY 2026': [],
+  'JULY 2026': [
+    {
+      course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
+      resources: { syllabus: '/courses/july-2026/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
+    },
+    {
+      course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
+      resources: { syllabus: '/courses/july-2026/knowledge-based-system-lab/syllabus/KBL.pdf', ebook: '/ebooks/lab-manual-kbs.pdf' },
+    },
+  ],
 };
 
 function ResourceLink({ href, label }: { href: string; label: string }) {
