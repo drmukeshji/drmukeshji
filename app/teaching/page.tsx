@@ -28,6 +28,9 @@ type Course = {
   resources?: Resources;
 };
 
+// Semesters that show the course table header even when no courses are listed yet.
+const headerOnlySemesters = ['JULY 2026'];
+
 // File paths follow the convention:
 // /courses/{semester-slug}/{course-slug}/{type}/filename
 // When Dr. Kumar uploads a file, add its path here to make the link appear.
@@ -183,7 +186,7 @@ export default function Teaching() {
       </div>
 
       {/* Course Table */}
-      {courses.length === 0 ? (
+      {courses.length === 0 && !headerOnlySemesters.includes(active) ? (
         <div className="border border-dashed border-gray-300 rounded-sm p-12 text-center">
           <p className="font-playfair text-xl text-gray-400 mb-2">No courses listed for this semester</p>
           <p className="font-inter text-sm text-gray-400">Course data will be added progressively.</p>
