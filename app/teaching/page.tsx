@@ -10,6 +10,7 @@ const semesters = [
   'JAN 2025',
   'JULY 2025',
   'JAN 2026',
+  'JULY 2026',
 ];
 
 type Resources = {
@@ -26,6 +27,9 @@ type Course = {
   sem: string;
   resources?: Resources;
 };
+
+// Semesters that show the course table header even when no courses are listed yet.
+const headerOnlySemesters = ['JULY 2026'];
 
 // File paths follow the convention:
 // /courses/{semester-slug}/{course-slug}/{type}/filename
@@ -122,6 +126,7 @@ const courseData: Record<string, Course[]> = {
     },
     { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
   ],
+  'JULY 2026': [],
 };
 
 function ResourceLink({ href, label }: { href: string; label: string }) {
@@ -181,7 +186,7 @@ export default function Teaching() {
       </div>
 
       {/* Course Table */}
-      {courses.length === 0 ? (
+      {courses.length === 0 && !headerOnlySemesters.includes(active) ? (
         <div className="border border-dashed border-gray-300 rounded-sm p-12 text-center">
           <p className="font-playfair text-xl text-gray-400 mb-2">No courses listed for this semester</p>
           <p className="font-inter text-sm text-gray-400">Course data will be added progressively.</p>

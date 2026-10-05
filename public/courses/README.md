@@ -25,6 +25,7 @@ public/courses/
 | JAN 2025   | `jan-2025`   |
 | JULY 2025  | `july-2025`  |
 | JAN 2026   | `jan-2026`   |
+| JULY 2026  | `july-2026`  |
 
 ## Course Slugs
 
