@@ -126,7 +126,16 @@ const courseData: Record<string, Course[]> = {
     },
     { course: 'Computer Fundamental', program: 'M.Tech. CSE', sem: '2nd Semester' },
   ],
-  'JULY 2026': [],
+  'JULY 2026': [
+    {
+      course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
+      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+    },
+    {
+      course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
+      resources: { ebook: '/ebooks/lab-manual-kbs.pdf' },
+    },
+  ],
 };
 
 function ResourceLink({ href, label }: { href: string; label: string }) {
