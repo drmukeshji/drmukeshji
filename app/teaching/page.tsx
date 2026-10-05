@@ -74,7 +74,7 @@ const courseData: Record<string, Course[]> = {
     },
     {
       course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+      resources: { syllabus: '/courses/july-2024/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
     },
     {
       course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
@@ -96,7 +96,7 @@ const courseData: Record<string, Course[]> = {
   'JULY 2025': [
     {
       course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+      resources: { syllabus: '/courses/july-2025/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
     },
     {
       course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
@@ -129,7 +129,7 @@ const courseData: Record<string, Course[]> = {
   'JULY 2026': [
     {
       course: 'Knowledge Based System', program: 'M.Tech', sem: '3rd Semester',
-      resources: { ebook: '/ebooks/knowledge-based-system.pdf' },
+      resources: { syllabus: '/courses/july-2026/knowledge-based-system/syllabus/kb.pdf', ebook: '/ebooks/knowledge-based-system.pdf' },
     },
     {
       course: 'Knowledge Based System Lab', program: 'M.Tech', sem: '3rd Semester',
